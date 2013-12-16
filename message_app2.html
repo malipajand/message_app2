@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Last Message</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="https://github.com/perifer/timePicker/blob/master/jquery.timePicker.min.js"></script>
+    <script src="jquery.timePicker.js"></script>
+    <script src="css/timePicker.css"></script>
+     <script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
+      <script type="text/javascript" charset="utf-8">
+
+
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+    function onDeviceReady() {
+        window.addEventListener("batterylow", onBatteryLow, false);
+    }
+    function onBatteryLow(info) {
+        alert("Battery Level Low " + info.level + "%"); 
+    }
+
+    </script>
+</head> 
+<body onload="onLoad()">
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Last Message</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h2>Settings</h2>		
+	</div><!-- /content -->
+
+<div data-role="fieldcontain">
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Date:</legend>
+    
+        <label for="select-choice-month">Month</label>
+        <select name="select-choice-month" id="select-choice-month">
+            <option>Month</option>
+            <option value="jan">January</option>
+            <option value="jan">February</option>
+            <option value="jan">March</option>
+            <option value="jan">April</option>
+            <option value="jan">May</option>
+            <option value="jan">June</option>
+            <option value="jan">July</option>
+            <option value="jan">August</option>
+            <option value="jan">September</option>
+            <option value="jan">October</option>
+            <option value="jan">November</option>
+            <option value="jan">December</option>
+            </select>
+    
+        <label for="select-choice-day">Day</label>
+        <select name="select-choice-day" id="select-choice-day">
+            <option>Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+    
+        <label for="select-choice-year">Year</label>
+        <select name="select-choice-year" id="select-choice-year">
+            <option>Year</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            </select>
+        
+                
+    </fieldset>
+<label for="flip-1">Always active:</label>
+<select name="flip-1" id="flip-1" data-role="slider">
+	<option value="off">Off</option>
+	<option value="on">On</option>
+</select> 
+
+	<div data-role="footer">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="message_app1.html">Message</a></li>
+			<li><a href="message_app2.html">Settings</a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

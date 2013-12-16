@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>message app</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link href="css/jqm-icon-pack-2.0-original.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script src="https://github.com/perifer/timePicker/blob/master/jquery.timePicker.min.js"></script>
+    <script src="jquery.timePicker.js"></script>
+    <script src="css/timePicker.css"></script>
+     <script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
+      
+   
+   
+</head> 
+<body onload="onLoad()">
+ 
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>Last Message</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Send a message automatically to warn someone that your battery is running low.</p>		
+	</div><!-- /content -->
+    <label for="basic">Message:</label>
+<input type="text" name="name" id="basic" data-mini="true" />
+<div data-role="fieldcontain">
+<label for="textarea">Textarea:</label>
+	<textarea name="textarea" id="textarea"></textarea>
+</div>
+
+<h4>Contacts:</h4>
+<a href="index.html" data-role="button" data-inline="true" data-theme="b">Phone Contacts</a>
+<a href="https://www.facebook.com/friends" data-role="button" data-icon="facebook" data-iconpos="notext">Facebook</a>
+<a href="https://www.gmail.com" data-role="button" data-icon="gmail" data-iconpos="notext">Email</a>
+
+<label for="slider-1">Battery percentage:</label>
+<input type="range" name="slider-1" id="slider-1" value="60" min="0" max="100" />
+<label for="flip-1">Active:</label>
+<select name="flip-1" id="flip-1" data-role="slider">
+	<option value="off">Off</option>
+	<option value="on">On</option>
+</select> 
+<div data-role="footer">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="message_app1.html">Message</a></li>
+			<li><a href="message_app2.html">Settings</a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+	</div><!-- /page -->
+
+</body>
+</html>
